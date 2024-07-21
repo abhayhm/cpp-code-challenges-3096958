@@ -16,7 +16,13 @@ int main(){
     std::cin >> n;
 
     // Write your code here
-    
+    for(int i = 1; i <= n; ++i){
+        if(i%3 && i%5){ std::cout<<i<<std::endl; continue; }
+        if(0==i%3) std::cout<<"Fizz";
+        if(0==i%5) std::cout<<"Buzz";
+        std::cout<<std::endl;
+    }
+
     std::cout << std::endl << std::flush;
     return 0;
 }
